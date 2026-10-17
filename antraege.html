@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anträge | Antrags-Ampel Neubau</title>
+<meta name="description" content="Anträge, Resolutionen und Anfragen der Bezirksvertretung Wien-Neubau seit 2020.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt</a>
+<header class="site-head"><div class="wrap">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><b>Antrags-Ampel</b><span>Bezirksvertretung Neubau · Wien 7</span></span></a>
+  <nav class="nav" aria-label="Hauptnavigation"><a href="index.html">Start</a><a href="antraege.html" aria-current=page>Anträge</a><a href="sitzungen.html">Sitzungen</a><a href="auswertung.html">Auswertung</a><a href="daten.html">Daten</a></nav>
+</div></header>
+<main id="inhalt"><div class="wrap">
+
+<h1>Anträge</h1>
+<div id="nojs" class="box" style="margin-top:24px">Für die Suche bitte JavaScript aktivieren. Alle Einträge sind auch über die <a href="sitzungen.html">Sitzungen</a> erreichbar.</div>
+<div class="finder" id="finder" hidden>
+  <details class="filters" id="filters" open>
+    <summary>Filter</summary>
+    <div class="fbody">
+      <div class="field"><label for="f-q">Suche</label><input id="f-q" type="search" placeholder="z. B. Burggasse"></div>
+      <div class="field"><label for="f-jahr">Jahr</label><select id="f-jahr"></select></div>
+      <div class="field"><label for="f-fr">Fraktion</label><select id="f-fr"></select></div>
+      <div class="field"><label for="f-thema">Thema</label><select id="f-thema"></select></div>
+      <div class="field"><label for="f-ampel">Stand</label><select id="f-ampel"></select></div>
+      <div class="field"><label for="f-erg">Abstimmung</label><select id="f-erg"></select></div>
+      <div class="field"><label for="f-instr">Art</label><select id="f-instr"></select></div>
+      <label class="check" for="f-offen"><input type="checkbox" id="f-offen" value="1"><span>nur offene</span></label>
+      <button class="btn ghost" id="reset" type="button" style="justify-self:start">Filter löschen</button>
+    </div>
+  </details>
+  <section aria-live="polite">
+    <div class="results-head"><h2 id="count"></h2>
+      <label class="sort" for="f-sort">Sortierung <select id="f-sort"><option value="neu">neueste zuerst</option><option value="alt">älteste zuerst</option><option value="ampel">nach Stand</option></select></label></div>
+    <div class="chips" id="chips"></div>
+    <ul class="entries" id="results"></ul>
+    <button class="btn ghost" id="more" type="button" hidden style="margin-top:18px">mehr</button>
+  </section>
+</div>
+<script src="assets/daten.js"></script>
+</div></main>
+<footer class="site-foot"><div class="wrap">
+  <div><h3>Antrags-Ampel Neubau</h3>
+    <p>Quelle: Sitzungsunterlagen der Bezirksvertretung Neubau auf wien.gv.at. Keine offizielle Seite der Stadt Wien.</p>
+    <p>Stand 17.10.2026</p>
+    <button class="theme-btn" id="theme-btn" type="button" hidden>Hell / Dunkel</button></div>
+  <div><h3>Seiten</h3><ul><li><a href="antraege.html">Anträge</a></li><li><a href="sitzungen.html">Sitzungen</a></li><li><a href="auswertung.html">Auswertung</a></li><li><a href="daten.html">Daten</a></li></ul></div>
+</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
